@@ -1,0 +1,105 @@
+html {
+  font-size: 35px;
+  font-family: "Kanit", sans-serif;
+  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  margin: 50px;
+  margin-top: 20px;
+}
+.day_night#mode {
+  background-image: url("day_icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lock#mode {
+  background-image: url("day_lock.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  color: #ffffffd0;
+  background-color: rgb(68, 67, 67);
+}
+.cell {
+  line-height: 53px;
+  margin: 3px;
+  border: 2px solid #cccccc;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 53px;
+  height: 53px;
+  transition: transform 0.5s ease-in-out;
+  user-select: none;
+  animation-fill-mode: forwards;
+}
+.cell#input {
+  color: black;
+  border: 2px solid #89898d;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.1s;
+  animation-name: focus;
+}
+.cell#selected {
+  color: white;
+  background-color: black;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.1s;
+  animation-name: focus;
+}
+@keyframes focus {
+  from {
+    font-size: 35px;
+    flex-basis: 53px;
+    transform: rotate3d(0, 0, 1, 10deg);
+  }
+
+  to {
+    font-size: 37px;
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+@keyframes flipG2 {
+  from {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 0, 0, -90deg);
+  }
+  90% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  to {
+    border: 2px solid #3a3a3c21;
+    background-color: #787c7e;
+  }
+}
+@keyframes flipY {
+  from {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 0, 0, -90deg);
+  }
+  90% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  to {
+    border: 2px solid #3a3a3c21;
+    background-color: #c9b458;
+  }
+}
+@keyframes flipG {
+  from {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 0, 0, -90deg);
+  }
+  90% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  to {
+    border: 2px solid #3a3a3c21;
+    background-color: #6aaa64;
+  }
+}

@@ -1,0 +1,20 @@
+#reset {
+  background-color: #d3d6da;
+  color: black;
+}
+.keys {
+  background-color: #d3d6da;
+  color: black;
+}
+.keys#grey {
+  color: white;
+  background-color: #787c7e;
+}
+.keys#green {
+  color: white;
+  background-color: #6aaa64;
+}
+.keys#yellow {
+  color: white;
+  background-color: #c9b458;
+}

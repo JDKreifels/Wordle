@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta meta name="viewport" content=
+    "width=device-width, user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="keyboard.css">
+    <link rel="stylesheet" href="day_styles.css">
+    <link rel="stylesheet" href="day_keyboard.css">
+    <link rel="stylesheet" href="color_blind_styles.css">
+    <link rel="stylesheet" href="color_blind_keyboard.css">
+    <script type="text/javascript" src="words.json"></script>
+    <script src="words.js"></script>
+    <script src="keyboard.js"></script>
+</head>
+<body>
+    <main>
+        <div id="mode" class="color_blind"></div>
+        <div id="mode" class="lock"></div>
+        <div id="mode" class="day_night"></div>
+    </main>
+    <script>
+        document.write("<h1></h1>");
+        document.write("<div id='tryTable'>");
+             for (let i = 0; i < 6; i++) {
+                  document.write("<div class='row'>");
+                for (let b = 0; b < 5; b++) document.write('<div class="cell"></div>');
+                document.write("</div>");
+             }   
+        document.write("</div>");
+        document.write("<div id='reset'>New Game</div>");  
+        document.write("<div id='keyboard'>");     
+            
+             for (let i = 0; i < keyboard.length; i++) {
+                document.write("<div class='keyRows'>");
+                for (let b = 0; b < keyboard[i].length; b++) document.write('<div class="keys">' + keyboard[i][b] + '</div>');
+                document.write("</div>");
+            }
+        document.write("</div>");
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

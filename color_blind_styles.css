@@ -1,0 +1,35 @@
+.color_blind#mode {
+  background-image: url("on_icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@keyframes flipY {
+  from {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 0, 0, -90deg);
+  }
+  90% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  to {
+    border: 2px solid #3a3a3c21;
+    background-color: #85c0f9;
+  }
+}
+@keyframes flipG {
+  from {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 0, 0, -90deg);
+  }
+  90% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  to {
+    border: 2px solid #3a3a3c21;
+    background-color: #f5793a;
+  }
+}
